@@ -16,7 +16,7 @@ $(function() {
        
         $('.modal-second').animate({opacity:1},3000);
     });
-    $('.btn-area3').click(function(){
+    $('.btn-area2').click(function(){
         $('.question').css("display","block");
         $('.result').css("display","none");
     });
