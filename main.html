@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通勤時間はどれくらいですか？(jQuery版)</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="main-container"></div>
+    </div>
+   
+    <div class="question">
+        <p class="lead-form">教えてね！</p>
+        <form id="form"> 
+  
+            <div class="item">
+              <label class="label">通勤時間は？（片道）</label>
+              <input class="inputs" id="commute-time" type="number" name="time" placeholder="分">
+            </div>
+            
+            <div class="item">
+              <label class="label">週の通勤回数は？</label>
+              <input class="inputs" id="commute-count" type="number" name="count" placeholder="回">
+            </div>
+          
+            <div class="submit-wrap">
+              <input type="button"  value="送信">
+            </div>
+            <!-- <div class="btn-area">
+              <input type="submit" value="計算する">
+            </div> -->
+          
+          </form>
+          
+    </div>
+ 
+    <div class="result">
+        <p class="modal-title">あなたは1年間に</p>
+        <div class="modal-first" id="result-time">-時間通勤に費やしました</div>
+        <div class="modal-book"><img src="undraw_time_management_30iu.svg" class="img"></div>
+        <div class="modal-second" id="result-book">冊本を読めました！</div>
+        <div class="modal-book"><img src="undraw_book_lover_mkck.svg" class="img"></div>
+        <div class="modal-third">  <a class="btn-flat-border" href="https://twitter.com/intent/tweet?screen_name=mayukopro&hashtags=通勤時間,プログラミング初心者&text=あなたもトライしてみてね！" target="_blank">Twitterでシェアする</a></div>
+        <!-- <div class="modal-third">万円のお給料を稼ぐことが出来ました</div>
+        <div class="modal-book"><img src="undraw_wallet_aym5.svg" class="img"></div> -->
+
+        <div class="btn-area2">
+          <button class="btn-area3"><input type="submit" value="もう一度計算する"></button>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
